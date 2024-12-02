@@ -1,7 +1,7 @@
 ﻿# Use functions to print out different menus for calulcating shape areas
 # main menu function
 function mainmenu {
-    cls
+    Clear-Host
 
     # prints the menu interface
     Write-Host "            Calculator" -ForegroundColor Green
@@ -47,7 +47,7 @@ function mainmenu {
 }
 
 function square {
-    cls
+    Clear-Host
 
     Write-Host "            Area of Square" -ForegroundColor Green
     Write-Host " "
@@ -85,7 +85,7 @@ function square {
 }
 
 function rectangle {
-    cls
+    Clear-Host
 
 
     Write-Host "            Area of Rectangle" -ForegroundColor Green
@@ -126,7 +126,7 @@ function rectangle {
 }
 
 function circle {
-    cls
+    Clear-Host
 
 
     Write-Host "            Area of Circle" -ForegroundColor Green
@@ -170,13 +170,14 @@ function circle {
 }
 
 function triangle {
-    cls
+    Clear-Host
 
     Write-Host "            Area of Triangle" -ForegroundColor Green
     Write-Host " "
 
     # asks the user for input
     $width = Read-Host "Enter the width of the triangle"
+    Write-Host " "
     $height = Read-Host "Enter the height of the triangle"
     $answer = [int]$width * [int]$height / 2
 
